@@ -1,0 +1,14 @@
+import sys
+
+if len(sys.argv) != 2:
+    print("Usage: python temperature_alert.py <temperature>")
+    sys.exit()
+
+temp = float(sys.argv[1])
+
+if temp < 15:
+    print("Cold")
+elif temp <= 30:
+    print("Normal")
+else:
+    print("Hot")
